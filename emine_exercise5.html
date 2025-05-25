@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>5dhnnn</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 20px;
+      font-family: sans-serif;
+      background-color:powderblue;
+    }
+
+    .emio {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      gap: 10px;
+      justify-items: center;
+    }
+
+    .i {
+      width: 100px;
+      height: 100px;
+      background-color: pink;
+      
+    }
+
+    @media (max-width: 900px) {
+      .emio {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    @media (max-width: 600px) {
+      .emio{
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 480px) {
+      .emio {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  
+  <div class="emio">
+    <div class="i"></div>
+    <div class="i"></div>
+    <div class="i"></div>
+    <div class="i"></div>
+    <div class="i"></div>
+    <div class="i"></div>
+  </div>
+</body>
+</html>
