@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>6dhnnn</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      padding: 20px;
+      font-family: sans-serif;
+      background-color:powderblue;
+    }
+
+    .emio {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+      justify-items: center;
+    }
+
+    .i {
+      width: 100px;
+      height: 100px;
+      background-color: pink;
+      
+    }
+    @media (max-width: 600px) {
+      .emio{
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+      }
+    }
+
+    @media (max-width: 400px) {
+      .emio {
+        grid-template-columns:repeat(1);
+      }
+    }
+  </style>
+</head>
+<body>
+  
+  <div class="emio">
+    <div class="i"></div>
+    <div class="i"></div>
+    <div class="i"></div>
+    <div class="i"></div>
+    <div class="i"></div>
+    <div class="i"></div>
+    <div class="i"></div>
+    <div class="i"></div>
+    <div class="i"></div>
+  </div>
+</body>
+</html>
